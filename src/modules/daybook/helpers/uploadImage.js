@@ -6,7 +6,7 @@ const uploadImage = async (file) => {
   }
 
   try {
-    const cloudUrl = "https://api.cloudinary.com/v1_1/dxzbc2qed/image/upload";
+    const cloudUrl = process.env.VUE_APP_CLOUDINARY_URL;
 
     const formData = new FormData();
     formData.append("upload_preset", "vue-course");

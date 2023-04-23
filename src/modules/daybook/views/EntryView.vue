@@ -190,7 +190,6 @@ export default {
       console.log(this.$refs.imageSelector.click());
       // document.querySelector('input[type="file"]').click()
     },
-    // https://api.cloudinary.com/v1_1/dxzbc2qed/image/upload
   },
   created() {
     this.loadEntry();
