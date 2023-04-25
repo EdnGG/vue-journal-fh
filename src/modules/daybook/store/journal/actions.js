@@ -26,7 +26,9 @@ export const updateEntry = async ({ commit }, payload) => {
   const resp = await journalApi.put(`/entries/${payload.id}.json`, entryToSave);
   // console.log(resp);
 
-  commit("updateEntry", { ...payload });
+  entryToSave.id = payload.id;
+
+  commit("updateEntry", { ...entryToSave });
 };
 
 export const createEntry = async ({ commit }, payload) => {

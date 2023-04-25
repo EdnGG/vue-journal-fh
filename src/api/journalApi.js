@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const journalApi = axios.create({
-  baseURL: "https://vue-journal-69da0-default-rtdb.firebaseio.com",
+  baseURL: process.env.VUE_APP_FIREBASE_URL,
 });
 
 export default journalApi;

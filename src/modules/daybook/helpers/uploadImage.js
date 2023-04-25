@@ -14,7 +14,7 @@ const uploadImage = async (file) => {
 
     const { data } = await axios.post(cloudUrl, formData);
 
-    console.log(data);
+    // console.log(data);
     // {
     // headers: {
     //   "Content-Type": "multipart/form-data",

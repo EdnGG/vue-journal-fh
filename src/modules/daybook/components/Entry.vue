@@ -10,7 +10,7 @@
       <span class="mx-2 fw-ligth">{{yearDay}}</span>
     </div>
     <div class="entry-description">
-      {{ entry.text }}
+      {{ entry.text }} 
     </div>
   </div>
 </template>
